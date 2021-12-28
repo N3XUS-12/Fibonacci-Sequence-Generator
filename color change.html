@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<style>
+
+body{
+padding-top: 40px;
+background-color: black;
+text-align: center;
+font-family: helvetica;
+font-size: 45px;
+color: white;
+}
+
+#box{
+margin: auto;
+width: 50%;
+height: 600px;
+background-color: black;
+}
+
+</style>
+
+<body onkeydown="color()">
+
+<div id="box"></div>
+<p id="p"></p>
+
+</body>
+
+<script>
+
+var num;
+
+function color(){
+num = Math.floor(Math.random()*10000000);
+c = num.toString(16);
+document.getElementById("box").style.backgroundColor = "#" + c;
+document.getElementById("p").innerHTML = c;
+}
+
+</script>
+</html>
