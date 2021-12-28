@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		var d1 = prompt("Enter first number");
+		var d2 = prompt("Enter second number");
+		var j = prompt("Enter iterations");
+	</script>
+</head>
+
+<body>
+
+<p id="text"></p>
+
+	<script>
+		var text = " "
+		var i = 2;
+		
+		do{
+			var d3 = Number(d1) + Number(d2);
+			text +=" (" + i + ")";
+			text += d2;
+			text +="<br>";
+			i++;
+			d1 = d2;
+			d2 = d3;
+		}
+		while (i <= j);
+	
+	document.getElementById("text").innerHTML = text;
+	</script>
+
+</body>
+</html>
